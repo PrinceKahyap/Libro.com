@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+:root {
+    --Text-color: #0e0e12;
+}
+
+/* -------------------Global-classes------------------------- */
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container {
+    max-width: 1225px;
+    margin: auto;
+    padding: 0 30px;
+}
+
+/* -------------------/Global-classes------------------------- */
+/* -------------------header-section------------------------- */
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70px;
+    background: #f2f2f2;
+    z-index: 10000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 100%;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-weight: 600;
+    color: var(--Text-color);
+    font-size: 2.2rem;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-menu a {
+    font-size: 1.6rem;
+    color: var(--Text-color);
+}
+
+.nav-btn .btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #0160ff;
+    color: white;
+    border: 0;
+    line-height: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 0;
+}
+/* -------------------/header-section------------------------- */
+
+/* -------------------Reviews-section------------------------- */
+.review{
+    width: 100%;
+    height: auto;
+    background-color: #f3f4ff;
+    padding: 120px 0px;
+}
+.title {
+    text-align: center;
+    padding-bottom: 50px;
+}
+.title h2{
+    color: #0160ff;
+    font-weight: 600;
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+.title p{
+    color: #0e0e12;
+    font-size: 3rem;
+    font-weight: 600;
+}
+.review-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+.review-boxs{
+    background-color: #ffffff;
+    padding: 30px 15px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.review-boxs p{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #8084a2;
+    margin: 0 0 20px;
+}
+.review-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.review-content h3{
+    font-size: 1.6em;
+    font-weight: 500;
+}
+.review-content ul{
+    display: flex;
+    gap: 5px;
+}
+.review-content ul i{
+    font-size: 1.4rem;
+    color: yellow;
+}
+.review-btn{
+    position: relative;
+    display: block;
+    text-align: center;
+    width: 200px;
+    height: 50px;
+    font-weight: 600;
+    top: 50px;
+    margin: auto;
+    border: 1px solid #0160ff;
+    background-color: #0160ff;
+    color: #ffffff;
+    font-size: 1.6rem;
+}
+/* -------------------/Reviews-section------------------------- */
+
+/* -------------------Edition-section------------------------- */
+.edition{
+    width: 100%;
+    height: auto;
+    background-color: #0160ff;
+}
+.edition-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+/* -------------------/Edition-section------------------------- */
+
+/* --------------------Footer-section------------------------- */
+footer{
+    background-color: #0e0e12;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 25px;
+}
+.foot-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footRight p{
+    font-size: 1.4rem;
+    color: #8084a2;
+}
+.footLeft ul{
+    display: flex;
+    gap: 20px;
+}
+.footLeft  a{
+    font-size: 1.4rem;
+    color: #8084a2;
+}
+/* --------------------/Footer-section------------------------- */
