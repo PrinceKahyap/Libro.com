@@ -180,6 +180,9 @@
         font-size: 3.5rem;
         width: 100%;
     }
+    .heroLeft p {
+        width: 100%;
+    }
 
     .company {
         padding-bottom: 0px;
@@ -192,6 +195,9 @@
     .contentRight {
         padding: 80px 20px;
 
+    }
+    .previewLeft p {
+        width: 100%;
     }
     .review-container{
         grid-template-columns: 1fr;
